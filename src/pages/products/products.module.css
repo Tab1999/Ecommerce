@@ -1,0 +1,18 @@
+.buttons  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   flex-wrap: nowrap;
+   /* margin: 0 15px; */
+   flex: 1;
+   background-color: #2e82ff;
+   /* border-radius: 20%; */
+}
+.buttons button{
+     margin: 0 15px;
+     padding: 0.7rem;
+    border-radius: 15%;
+     border-style: 1px solid white;
+     border-color: white;
+}
