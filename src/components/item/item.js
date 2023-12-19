@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import CartIcon from "../../pages/cart/CartIcon"
 
 const Item = ({ data, addToCart }) => {
 
@@ -21,7 +22,8 @@ const Item = ({ data, addToCart }) => {
                         ${price}
                     </span>
                     <div className="cart" onClick={addToCart}>
-                        <img className="cartImg" src="/cart.svg" alt="" />
+                        {/* <img className="cartImg" src="/cart.svg" alt="" /> */}
+                        <CartIcon/>
                     </div>
                 </div>
             </div>

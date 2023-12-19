@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { FakeStoreApi } from '../../services/fake-store-api'
 import { Link, useParams } from "react-router-dom"
 import { useCart } from "../../context/cart"
+import CartIcon from '../cart/CartIcon'
 
 const Product = () => {
     const [loading, setLoading] = useState(true);
@@ -56,7 +57,8 @@ const Product = () => {
                             <div className="flex">
                                 <span className="price">${product.price}</span>
                                 <span className="cart" onClick={() => addToCart(product)}>
-                                    <img src="/cart.svg" alt="" />
+                                    {/* <img src="/cart.svg" alt="" /> */}
+                                    <CartIcon/>
                                 </span>
                             </div>
                         </div>

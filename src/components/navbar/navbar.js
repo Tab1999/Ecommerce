@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-
+import CartIcon from "../../pages/cart/CartIcon";
+import classes from "./navbar.module.css";
 const NavBar = ({ onSearch, cartItemCount }) => {
 
     const [searchQuery, setSearchQuery] = useState('');
@@ -18,7 +19,7 @@ const NavBar = ({ onSearch, cartItemCount }) => {
                 <div className="header py-2">
                     <div className="grid">
                         <Link to="/" className="link">
-                            <h1 className="brand">E-commerce</h1>
+                            <h1  style={{marginBottom:'0.5rem'}} className="brand">E-commerce</h1>
                         </Link>
                         <div className="formContainer">
                             <form className="search">
@@ -36,9 +37,10 @@ const NavBar = ({ onSearch, cartItemCount }) => {
                             </form>
                         </div>
                         <Link to="/cart" className="link headerCart">
-                            <img className="cartImg" src="/cart.svg" alt="cart" />
+                            {/* <img className="cartImg" src="/cart.svg" alt="cart" /> */}
+                            <CartIcon className={classes.icon}/>
                             {cartItemCount > 0 && (
-                                <div className="cartCounter">{cartItemCount <= 9 ? cartItemCount : "9+"}</div>
+                                <div style={{marginBottom:"0.5rem"}} className="cartCounter">{cartItemCount <= 9 ? cartItemCount : "9+"}</div>
                             )}
                         </Link>
                     </div>

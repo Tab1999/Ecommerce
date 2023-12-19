@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -61,4 +61,10 @@ body {
   .header button:hover {
     background-color: #c291e2;
     color: #38015c;
+  } */
+
+  .icon{
+    margin-right:0.2rem ;
+    margin-bottom: 0.2rem;
+    padding: 10px;
   }
